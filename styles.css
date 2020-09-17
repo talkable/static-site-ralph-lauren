@@ -1,0 +1,7 @@
+@font-face {
+    font-family: RL-icons;
+    src: url(../rlna_icons/RL-icons.eot?isgw1k);
+    src: url(../rlna_icons/RL-icons.eot?isgw1k#iefix) format("embedded-opentype"),url(../rlna_icons/RL-icons.svg?isgw1k#RL-icons) format("svg"),url(../rlna_icons/RL-icons.woff?isgw1k) format("woff"),url(../rlna_icons/RL-icons.ttf?isgw1k) format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
