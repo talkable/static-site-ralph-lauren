@@ -248,6 +248,22 @@ window.location.reload();
 <link rel="preload" href="https://www.ralphlauren.com/on/demandware.static/Sites-RalphLauren_US-Site/-/en_US/v1600337610525/css/rlc-core.css" as="style">
 <link rel="stylesheet" href="https://www.ralphlauren.com/on/demandware.static/Sites-RalphLauren_US-Site/-/en_US/v1600337610525/css/rlc-core.css" type="text/css">
 <link rel="canonical" href="https://www.ralphlauren.com/sale" />
+  
+<!-- Begin Talkable integration code -->
+<script async src="https://d2jjzw81hqbuqv.cloudfront.net/integration/clients/ralph-lauren.min.js"></script>
+<script>
+  window._talkableq = window._talkableq || [];
+  window._talkableq.unshift(['init', { site_id: 'ralph-lauren' }]);
+  window._talkableq.push(['authenticate_customer', {
+    email: '', // Optional, pass when available. Example: 'customer@example.com'
+    first_name: '', // Optional, pass when available. Example: 'John'
+    last_name: '', // Optional, pass when available. Example: 'Smith'
+    traffic_source: '' // Optional, the source of the traffic driven to the campaign. Example: 'facebook'
+  }]);
+  window._talkableq.push(['register_affiliate', {}]);
+</script>
+<!-- End Talkable integration code -->
+  
 </head>
 <body>
 <div id="wrapper" class="pt_categorylanding">
@@ -4231,20 +4247,6 @@ dw.applepay = {"action":{"cancel":"https:\/\/www.ralphlauren.com\/on\/demandware
 <script type="text/javascript" src="https://www.ralphlauren.com/on/demandware.static/Sites-RalphLauren_US-Site/-/en_US/v1600337610525/internal/jscript/applepay.js" async="true"></script>
   
   
-<!-- Begin Talkable integration code -->
-<script async src="https://d2jjzw81hqbuqv.cloudfront.net/integration/clients/ralph-lauren.min.js"></script>
-<script>
-  window._talkableq = window._talkableq || [];
-  window._talkableq.unshift(['init', { site_id: 'ralph-lauren' }]);
-  window._talkableq.push(['authenticate_customer', {
-    email: '', // Optional, pass when available. Example: 'customer@example.com'
-    first_name: '', // Optional, pass when available. Example: 'John'
-    last_name: '', // Optional, pass when available. Example: 'Smith'
-    traffic_source: '' // Optional, the source of the traffic driven to the campaign. Example: 'facebook'
-  }]);
-  window._talkableq.push(['register_affiliate', {}]);
-</script>
-<!-- End Talkable integration code -->
   
 </body>
 </html>
