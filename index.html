@@ -3678,7 +3678,8 @@ window.switchHeaderStyle();
 		} */
 	}
 </style>
-                          <h1 style="text-transform: uppercase; text-align: center; margin: 128px auto;">Campaign Content</h1>
+<!--                          <h1 style="text-transform: uppercase; text-align: center; margin: 128px auto;">Campaign Content</h1>-->
+                          <div id="talkable-offer"></div>
 </div>
 <script>
 // prep for the header style for a scheduled banner
@@ -4228,5 +4229,22 @@ dw.applepay = {"action":{"cancel":"https:\/\/www.ralphlauren.com\/on\/demandware
 // -->
 </script>
 <script type="text/javascript" src="https://www.ralphlauren.com/on/demandware.static/Sites-RalphLauren_US-Site/-/en_US/v1600337610525/internal/jscript/applepay.js" async="true"></script>
+  
+  
+<!-- Begin Talkable integration code -->
+<script async src="https://d2jjzw81hqbuqv.cloudfront.net/integration/clients/ralph-lauren.min.js"></script>
+<script>
+  window._talkableq = window._talkableq || [];
+  window._talkableq.unshift(['init', { site_id: 'ralph-lauren' }]);
+  window._talkableq.push(['authenticate_customer', {
+    email: '', // Optional, pass when available. Example: 'customer@example.com'
+    first_name: '', // Optional, pass when available. Example: 'John'
+    last_name: '', // Optional, pass when available. Example: 'Smith'
+    traffic_source: '' // Optional, the source of the traffic driven to the campaign. Example: 'facebook'
+  }]);
+  window._talkableq.push(['register_affiliate', {}]);
+</script>
+<!-- End Talkable integration code -->
+  
 </body>
 </html>
