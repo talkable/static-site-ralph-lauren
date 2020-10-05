@@ -66,3 +66,21 @@
     src: url(../df-refresh/Fonts/LeJeuneDeck-RegularItalic-Web.woff) format("woff"),url(../df-refresh/Fonts/LeJeuneDeck-RegularItalic-Web.woff2) format("woff2");
     font-display: swap
 }
+
+
+.level-2 {
+    display: none !important;
+}
+
+
+.level-1>li .category-click-thru {
+    display: none !important;
+}
+@media screen and (max-width: 959px) and (min-width: 361px) {
+    .menu-category .category-click-thru, .menu-category a, .nav-main-cat-default {
+        display: inline-block !important;
+    }
+    .menu-category li .menu-item-toggle.open-menu {
+        pointer-events: none;
+    }
+}
