@@ -71,7 +71,11 @@
 .level-2 {
     display: none !important;
 }
-
+@media screen and (min-width: 960px) {
+    .menu-mask {
+        display: none !important;
+    }
+}
 
 .level-1>li .category-click-thru {
     display: none !important;
