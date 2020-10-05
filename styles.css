@@ -82,5 +82,6 @@
     }
     .menu-category li .menu-item-toggle.open-menu {
         pointer-events: none;
+        display: none;
     }
 }
