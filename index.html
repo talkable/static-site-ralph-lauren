@@ -442,7 +442,25 @@ Yo.pubsub.subscribe({
         }
     }
 });
-</script></head>
+</script>
+
+
+<!-- Begin Talkable integration code -->
+<script async src="https://d2jjzw81hqbuqv.cloudfront.net/integration/clients/ralph-lauren.min.js"></script>
+<script>
+  window._talkableq = window._talkableq || [];
+  window._talkableq.unshift(['init', { site_id: 'ralph-lauren' }]);
+  window._talkableq.push(['authenticate_customer', {
+    email: '', // Optional, pass when available. Example: 'customer@example.com'
+    first_name: '', // Optional, pass when available. Example: 'John'
+    last_name: '', // Optional, pass when available. Example: 'Smith'
+    traffic_source: '' // Optional, the source of the traffic driven to the campaign. Example: 'facebook'
+  }]);
+  window._talkableq.push(['register_affiliate', {}]);
+</script>
+<!-- End Talkable integration code -->
+
+</head>
 
 <!-- END OF YOTTAA PREFETCH LOCATION=<body> -->
 <!--PREFETCH COOKIES START-->
