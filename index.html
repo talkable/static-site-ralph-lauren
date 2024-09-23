@@ -537,14 +537,25 @@
                 $('.menu-mask.desktop-only').toggleClass('menu-mask-active');
 
                 // test
-                $('.mobile-nav-header').css('clip-path', 'inset(0%)');
-                $('.js-menu-toggle').attr('aria-expanded', "true")
-                $('#navigation').css({
-                    'top': '64px',
-                    'height': '884px',
-                    'overflow': 'auto',
-                    'transform': 'translate(0%, 0px)'
-                })
+                if( $('#wrapper').hasClass('menu-active') ){
+                  $('.mobile-nav-header').css('clip-path', 'inset(0%)');
+                  $('.js-menu-toggle').attr('aria-expanded', "true")
+                  $('#navigation').css({
+                      'top': '64px',
+                      'height': '884px',
+                      'overflow': 'auto',
+                      'transform': 'translate(0%, 0px)'
+                  })
+                }else{
+                  $('.mobile-nav-header').css('clip-path', 'initial');
+                  $('.js-menu-toggle').attr('aria-expanded', "false")
+                  $('#navigation').css({
+                      'top': '',
+                      'height': '',
+                      'overflow': '',
+                      'transform': ''
+                  })
+                }
             })
         })
     </script>
