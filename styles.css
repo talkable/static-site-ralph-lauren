@@ -89,3 +89,15 @@
 #footer {
     padding-top: 0 !important;
 }
+
+#onetrust-consent-sdk {
+    display: none !important;
+}
+
+.js-header-acc {
+    display: none !important;
+}
+
+#search {
+    display: none !important;
+}
